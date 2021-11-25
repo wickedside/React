@@ -83,11 +83,11 @@ const Home = () => {
               <form action="#">
                 <div className="file-field input-field">
                 <div className="btn">
-                  <span>File</span>
+                  <span></span>
                      <input type="file" multiple></input>
                   </div>
                   <div className="file-path-wrapper">
-                    <input className="file-path validate" type="text" placeholder="Upload some photos"></input>
+                    <input className="file-path validate" type="text" placeholder="Upload photo"></input>
                   </div>
                 </div>
               </form>
@@ -95,7 +95,7 @@ const Home = () => {
       </ul>
       <div className="col s4">
         <a className="waves-effect waves-light btn">
-          Registrate
+          Registration
         </a>
       </div>
   </div>

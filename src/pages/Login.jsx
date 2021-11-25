@@ -3,7 +3,7 @@ import AuthContext from "../context";
 
 const Login = () => {
   const {isAuth, setIsAuth} = useContext(AuthContext);
-  const loginData = {login: "11", password: "11"}
+  const loginData = {login: "wickedside", password: "1321"}
   const [error, setError] = useState('')
   const [inputData, setInputData] = useState({
     login: '',

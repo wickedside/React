@@ -28,27 +28,22 @@ const Devices = () => {
          {value.map((key)=>(
             <option key={key} value={key}>{key}</option>
   ))}
-        {/* <option value="1">Samsung</option>
-        <option value="2">Apple</option>
-        <option value="3">Nokia</option>
-        <option value="4">Huawei</option> */}
+        {}
       </select>
 
       <table>
         <thead>
           <tr>
-            {Object.keys(devices[0]).map((field) => (   /*Object.keys когда хотим получить поля*/
+            {Object.keys(devices[0]).map((field) => ( 
               <th key={field}>{field}</th>
             ))}
 
-            {/* <th>Name</th>   это равно сверху
-            <th>Phone</th>
-            <th>Delete</th> */}
+            {}
           </tr>
         </thead>
 
         <tbody>
-          {phones && phones.map((device) => ( /* если фонс есть ток*/
+          {phones && phones.map((device) => (
             <tr key={device.id}>
               <td>{device.id}</td>
               <td>{device.name}</td>

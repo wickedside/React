@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import UserList from "../components/UserList";
 import MyModal from "../components/MyModal/MyModal"
+import axios from 'axios';
 
 const Users = () => {
 const [loading, setLoading] = useState(false);
 
-
+  const fetchUsers = async () => {
+    const users = await axios.get('https://jsonplaceholder.typicode.com/users');
+    setUsers(users.data);
+  }
 
 useEffect(()=>{
   fetchUsers();
